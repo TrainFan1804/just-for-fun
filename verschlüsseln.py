@@ -1,19 +1,19 @@
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-def verschlüsseln(text, schlüssel):
-    Ziffertext = ""
+def verschlüsseln(text, key):
+    digit_text  = ""
     for character in text:
         if character.isalpha():
             character = character.lower()
             char_index = alphabet.index(character)
-            new_index = (char_index + schlüssel) % 26
+            new_index = (char_index + key) % 26
             cipher_char = alphabet[new_index].upper()
         else:
             cipher_char = character
 
-        Ziffertext += cipher_char
+        digit_text += cipher_char
 
-    print("Your ciphertext is: " + Ziffertext)
+    print("Your ciphertext is: " + digit_text)
 
 def entschlüsseln(ciphertext, schlüssel):
     klartext = ""
