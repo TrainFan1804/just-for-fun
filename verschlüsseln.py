@@ -31,6 +31,6 @@ def entschlüsseln(ciphertext, schlüssel):
     print("your plaintext is: " + klartext)
 
 
-verschlüsseln("The08owl-&4house", 804)
+verschlüsseln("password here", 804)
 
 entschlüsseln("RFC08MUJ-&4FMSQC", 804)
